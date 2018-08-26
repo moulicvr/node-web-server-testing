@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axis": "^1.0.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^3.2.6",
+    "googleapis": "^32.0.0",
+    "hbs": "^4.0.1",
+    "msexcel-builder": "0.0.2",
+    "request": "^2.88.0",
+    "response": "^0.18.0",
+    "yargs": "^12.0.1"
+  }
+}
