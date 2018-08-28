@@ -20,8 +20,6 @@ app.use((req, res, next)=>{
       console.log('Unable to append the file');
     }
   });
-
-
   next();
 });
 
@@ -57,18 +55,20 @@ app.get('/', (req , res) =>{
     ]
   });*/
 });
-
-
 app.get('/about',(req,res)=>{
    //res.send('Contact us on 0468932408');
 res.render('about.hbs',{
   pageTitel: 'About Page',
   currentYear: new Date().getFullYear()
 });
-
-
 });
 
+
+app.get('/projects',(req, res)=>{
+  res.render('projects.hbs',{
+    pageTitel:'Project page'
+  });
+});
 app.get('/bad',(req, res)=>{
   res.send({
     error:'Sorry There is an issue now, please visit us later'
